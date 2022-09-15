@@ -7,6 +7,11 @@ from datetime import date
 from ordered_set import OrderedSet
 pd.set_option('display.max_columns', 1000, 'display.width', 1000, 'display.max_rows',1000)
 
+"""
+A program that fuzzy matches strings returning difference ration and symmetric difference. 
+
+"""
+
 # set CWD
 os.chdir('M:\GY number duplicates')
 
