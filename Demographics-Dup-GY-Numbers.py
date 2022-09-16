@@ -8,7 +8,7 @@ from ordered_set import OrderedSet
 pd.set_option('display.max_columns', 1000, 'display.width', 1000, 'display.max_rows',1000)
 
 """
-A program that fuzzy matches strings returning difference ration and symmetric difference. 
+A program that fuzzy matches strings returning similarity ratio and symmetric difference. 
 
 """
 
@@ -62,7 +62,7 @@ for i in range(len(master_list)):
         score = fuzz.ratio(x, y)
         score_list.append(score)
         
-        # get differences between specific field using OrderedSet for clarity
+        # get differences between specific fields using OrderedSet for clarity
         splitB = OrderedSet(x.split(' '))
         splitA = OrderedSet(y.split(' '))
         diffA = splitA - splitB
